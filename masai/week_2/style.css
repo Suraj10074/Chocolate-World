@@ -1,0 +1,125 @@
+.flex-box
+        {
+            display:flex; 
+        }
+        
+.flex-box div {
+    margin: 20px;
+    padding: 60px;
+    border: 1px solid brown;
+    background:brown;
+text-align:auto;
+text-justify:auto;
+
+    }
+
+#box1 div:nth-of-type(1){
+        flex-basis: 50%;
+    background:brown;
+text-align:auto;
+text-justify:auto;
+    }
+
+#box2 div:nth-of-type(2n){
+    flex-grow:3;
+    background: brown;
+text-align:auto;
+text-justify:auto;
+    }
+
+#box3 div {
+    flex-grow:3;
+    background: white;
+    border: none;
+    align-content: center;
+    align-items: flex-end;
+    float: center;
+text-align:auto;
+text-justify:auto;
+    }
+
+#cont {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 800px 800px ;
+  background:brown;
+  padding: 100px;
+  margin:10px;
+  clear: left;
+text-align:auto;
+text-justify:auto;
+}
+
+#cont div {
+  clear: left;
+text-align:auto;
+text-justify:auto;
+}
+
+#id1 {
+width: 50px;
+    }  
+
+@media (max-width: 800px)
+    {
+        body
+        {
+            background:brown;
+        }
+        .flex-box {
+            display:flex;
+            flex-basis:100px;
+            flex-direction:row;
+            margin-left: -1px;
+text-align:auto;
+text-justify:auto;
+        }
+
+        #box1 {
+            display:flex;
+            flex-direction:column;
+text-align:auto;
+text-justify:auto;
+        }
+
+        #box2 {
+            display:flex;
+            flex-direction:column;
+text-align:auto;
+text-justify:auto;
+        }
+
+        #box3 {
+            display:flex;
+            flex-direction:column;
+text-align:auto;
+text-justify:auto;
+        }
+
+        #cont {
+         flex-basis:100px;
+            flex-direction:row;
+            margin-left: -1px;
+text-align:auto;
+text-justify:auto;
+            }
+
+       #id1 {
+        width: 25px;
+text-align:auto;
+text-justify:auto;
+        }
+
+ #item3 {
+        width: 25px;
+text-align:auto;
+text-justify:auto;
+        }
+ #item4 {
+        width: 25px;
+text-align:auto;
+text-justify:auto;
+        }
+
+    }
